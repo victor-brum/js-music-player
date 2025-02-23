@@ -5,10 +5,10 @@ This is a music player mainly made with pure JavaScript. It has an intuitive use
 * Manipulation bar: Control the tempo of the music.
 * Menu with buttons: Start, pause, next, previous, shuffle song.
 
-![MusicPlayer_Image](https://github.com/user-attachments/assets/31e177a5-adc7-48a6-8b80-ffea083df7be)
+![MusicPlayer_Image](https://github.com/user-attachments/assets/de33cd41-a2ef-4b4d-bbce-8a68ac9b3fa7)
 
 ## Live Preview
-[Click here!](https://brumvictor.github.io/js-music-player/)
+[Click here!](https://victor-brum.github.io/js-music-player/)
 
 ## Usage
 

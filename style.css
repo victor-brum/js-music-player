@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #181818;
+}
+
+.player {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  position: relative;
+  border-radius: 20px;
+  width: 300px;
+  height: 520px;
+  padding: 25px 30px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #282828;
+  border-style: solid;
+  border-color: #5e5e5e;
+  border-width: 1px;
+}
+
+.image {
+  background-size: cover;
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+  margin-top: 13.5px;
+  border-radius: 10px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.song-name {
+  margin-top: 10%;
+  color: #eeeeee;
+  font-size: 18px;
+  text-align: center;
+}
+
+.song-name text:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.song-artist {
+  font-size: 14px;
+  color: #a7a7a7;
+  text-align: center;
+}
+
+.song-artist text:hover {
+  color: #cccccc;
+  cursor: pointer;
+}
+
+.slider_content {
+  margin-top: 12%;
+  height: 6px;
+  width: 100%;
+  border-radius: 50px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.slider_content .slider-bar {
+  height: inherit;
+  width: 0%;
+  position: relative;
+  border-radius: inherit;
+  background: #1ed760;
+}
+
+.slider-bar::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  top: 50%;
+  right: -5px;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  background: inherit;
+  transition: opacity 0.2s ease;
+}
+.slider_content:hover .slider-bar::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.song-timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.menu {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.prev-song,
+.next-song,
+.random-song,
+.repeat-song {
+  font-size: 27px;
+}
+
+.play-pause {
+  font-size: 55px;
+}
+
+.prev-song:hover,
+.next-song:hover,
+.random-song:hover,
+.repeat-song:hover,
+.play-pause:hover {
+  color: #1ed760;
+  cursor: pointer;
+}

@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="musical notes.ico" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="player">
+      <div class="wrapper">
+        <div class="content">
+          <div class="image">
+            <img src="" alt="" />
+          </div>
+          <div class="song_content">
+            <p class="song-name"></p>
+            <p class="song-artist"></p>
+          </div>
+        </div>
+
+        <div class="slider_content">
+          <div class="slider-bar">
+            <audio id="song-audio" src=""></audio>
+          </div>
+        </div>
+        <div class="song-timer">
+          <span class="current-time">0:00</span>
+          <span class="total-duration">0:00</span>
+        </div>
+
+        <div class="menu">
+          <span class="random-song" onclick="randomSong()"
+            ><ion-icon name="shuffle"></ion-icon
+          ></span>
+          <span class="prev-song" onclick="prevSong()"
+            ><ion-icon name="play-skip-back"></ion-icon
+          ></span>
+          <span class="play-pause" onclick="playpauseSong()"
+            ><ion-icon name="play-circle"></ion-icon
+          ></span>
+          <span class="next-song" onclick="nextSong()"
+            ><ion-icon name="play-skip-forward"></ion-icon
+          ></span>
+          <span class="repeat-song" onclick="repeatSong()"
+            ><ion-icon name="refresh"></ion-icon
+          ></span>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
